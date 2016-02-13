@@ -31,3 +31,14 @@ def get_data(upc_code):
             product_name += product[i]
 
     return product_name + ',' + company_name
+        
+
+def get_test():
+    '''() -> str
+    test without getting from barcode
+    '''
+    return "Kellog's Rice Krispies Squares/Original,Kellogg Canada Inc."
+
+def process_image(fileName):
+    return get_data(get_upc(filename))
+
