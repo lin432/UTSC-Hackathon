@@ -25,9 +25,10 @@ def get_data(upc_code):
         company = data[data.find('company')-1:len(data)-2]
     
         company_name = company[company.find('name')+7:company.find('logo')-3]
+        company_name = company[:company.find(' ')]
         print company_name
     else:
-        company_name = 'Could not be found'
+        company_name = 'Could not be found. Please submit'
     product = data[data.find('attributes')+24:data.find('description')-3]
     print product
     product_name = ''
@@ -35,15 +36,17 @@ def get_data(upc_code):
         if product[i] != '\\':
             product_name += product[i]
 
-    return product_name + ',' + company_name
+    return (product_name,company_name)
         
 
+# use this for testing
 def get_test():
     '''() -> str
     test without getting from barcode
     '''
-    return "Kellog's Rice Krispies Squares/Original,Kellogg Canada Inc."
+    return ("Kellog's Rice Krispies Squares/Original"),("Kellogg")
 
+# use this for processing everythings
 def process_image(fileName):
     return get_data(get_upc(filename))
 
