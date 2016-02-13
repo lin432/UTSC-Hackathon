@@ -44,7 +44,7 @@ def get_test():
     '''() -> str
     test without getting from barcode
     '''
-    return ("Kellog's Rice Krispies Squares/Original"),("Kellogg")
+    return ("Kellog's Rice Krispies Squares/Original","Kellogg")
 
 # use this for processing everythings
 def process_image(fileName):
