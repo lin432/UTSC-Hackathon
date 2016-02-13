@@ -17,7 +17,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: blue;
+    color: white;
 }
 
 a:hover {
@@ -64,5 +64,5 @@ body {
 #fakeButtonLink
 {
 	background-color: #000000;
-	padding: 2px;
+	padding: 5px;
 }
