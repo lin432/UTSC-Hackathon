@@ -12,10 +12,13 @@ ul
 
 a:link {
     text-decoration: none;
+    border-color: black;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
+    border-color: black;
 }
 
 a:hover {
@@ -64,6 +67,5 @@ body {
 	background-color: #EEEEEE;
 	border: solid;
 	padding: 2px;
-	border-color: black;
-	color: black;
+
 }
