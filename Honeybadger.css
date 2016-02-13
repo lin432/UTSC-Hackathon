@@ -12,13 +12,12 @@ ul
 
 a:link {
     text-decoration: none;
-    border-color: black;
-    color: black;
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    border-color: black;
+    color: blue;
 }
 
 a:hover {
@@ -64,8 +63,6 @@ body {
 }
 #fakeButtonLink
 {
-	background-color: #EEEEEE;
-	border: solid;
+	background-color: #000000;
 	padding: 2px;
-
 }
