@@ -20,9 +20,14 @@ def get_data(upc_code):
     response = urllib2.urlopen("http://eandata.com/feed/?v=3&mode=json&keycode="
                                + EAN_ACCESS_CODE + "&find=" + upc_code)
     data = response.read()
-    company = data[data.find('company')-1:len(data)-2]
-    company_name = company[company.find('name')+7:company.find('logo')-3]
-    print company_name
+    if data.find('company') != -1:
+        
+        company = data[data.find('company')-1:len(data)-2]
+    
+        company_name = company[company.find('name')+7:company.find('logo')-3]
+        print company_name
+    else:
+        company_name = 'Could not be found'
     product = data[data.find('attributes')+24:data.find('description')-3]
     print product
     product_name = ''
