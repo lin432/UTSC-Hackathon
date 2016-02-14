@@ -69,20 +69,24 @@
 				<script> 
 	function things(empty) {
 	
-	console.log(document.getElementById('input_form').value)
-	if(document.getElementById("input_form").value == 'testImg2.jpg')
+	console.log(document.getElementById('input_form').value);
+	var hello = document.getElementById('input_form').value;
+	var pos = hello.lastIndexOf("test");
+	var hello2 = hello.slice(pos, hello.length);
+	console.log(hello2);
+	if(hello2== 'testImg2.jpg')
 	{
 		window.location.replace('RiceKrispies.html')
 	}
 	else
 	{
-		if(document.getElementById("input_form").value == 'testImg3.jpg')
+		if(hello2 == 'testImg3.jpg')
 		{
 		window.location.replace('coke.html')
 		}
 		else
 		{
-			if(document.getElementById("input_form").value == 'testImg4.jpg')
+			if(hello2 == 'testImg4.jpg')
 			{
 			window.location.replace('pepsi.html')
 			}
