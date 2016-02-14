@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="file:///C:/Users/Prantar/Desktop/Hackathon/spot/theme/assets/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <title>Honey Badger</title>
 
@@ -66,8 +66,15 @@
 	<div class="container w" align="center">
 		<div align="center" >
 			<span style = "display:inline-block;">
-				<input type="file" name="pic" accept="image/*" style="background-color: white; float:left;">
-				<button style="float:right">Submit</button>
+				<script> 
+				function get_stuff(stuff) {
+					console.log(document.getElementById("input_form").value)
+				
+				}
+				</script>
+				<input id="input_form" type="file" name="pic" accept="image/*" style="background-color: white; float:left;">
+				<button onclick="get_stuff()" style="float:right">Submit</button>
+				
 			</span>
 
 		</div>
@@ -120,7 +127,7 @@
 						hi@blacktie.co
 		        	</p>
 		        	<div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./services_files/maps.html"></iframe>
+		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" href="/assets/maps.html"></iframe>
 					</div>	
 		        </div>
 	      </div>
