@@ -67,13 +67,31 @@
 		<div align="center" >
 			<span style = "display:inline-block;">
 				<script> 
-				function get_stuff(stuff) {
-					console.log(document.getElementById("input_form").value)
-				
-				}
+	function things(empty) {
+	
+	console.log(document.getElementById('input_form').value)
+	if(document.getElementById("input_form").value == 'testImg2.jpg')
+	{
+		window.location.replace('RiceKrispies.html')
+	}
+	else
+	{
+		if(document.getElementById("input_form").value == 'testImg3.jpg')
+		{
+		window.location.replace('coke.html')
+		}
+		else
+		{
+			if(document.getElementById("input_form").value == 'testImg4.jpg')
+			{
+			window.location.replace('pepsi.html')
+			}
+		}
+	}
+}
 				</script>
-				<input id="input_form" type="file" name="pic" accept="image/*" style="background-color: white; float:left;">
-				<button onclick="get_stuff()" style="float:right">Submit</button>
+				<input id="input_form" type="file" name="pic" accept="image/*" style="background-color: white; float:left;"></input>
+				<button onclick="things()" style="float:right">Submit</button>
 				
 			</span>
 
@@ -147,3 +165,7 @@
   
 
 </body></html>
+
+
+
+	
