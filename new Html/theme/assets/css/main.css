@@ -44,15 +44,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
-.button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -30px;
-  transition: 0.5s;
-}
-
 .button:hover span {
   padding-right: 5px;
 }
