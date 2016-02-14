@@ -133,7 +133,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
+	background: url(https://scontent-yyz1-1.xx.fbcdn.net/hphotos-xpa1/v/t34.0-12/12721834_10156532352070634_1948947343_n.jpg?oh=6535662b1c2df2a9cffaec80d955c740&oe=56C1F223) no-repeat center top;
 	margin-top: -10px;
 	padding-top:20px;
 	text-align:center;
@@ -155,14 +155,14 @@ a:after {
 
 #headerwrap h1 {
 	margin-top: 100px;
-	color: white;
+	color: #262626;
 	font-size: 70px;
 	font-weight: 300;
 	letter-spacing: 3px;
 }
 
 #headerwrap h2 {
-	color: white;
+	color: #262626;
 	font-size: 40px;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -171,7 +171,7 @@ a:after {
 
 /* Dark Grey Wrap */
 #dg {
-	
+	background: #e0e0e0;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
@@ -213,7 +213,7 @@ a:after {
 /* Blue Wrap */
 
 #blue {
-	
+	background: #3498db;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
