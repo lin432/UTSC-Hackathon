@@ -1,4 +1,4 @@
-/* FONTS */
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
+
 .button:hover span {
   padding-right: 5px;
 }
@@ -51,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
 
 /* Paragraph & Typographic */
 p {
