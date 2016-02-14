@@ -33,6 +33,41 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
+.fanciness {
+  background-color: #ff7678;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Raleway";
+  text-align: center;
+  font-size: 28px;
+  width: 320px;
+  padding: 5px 0px;
+
+}
+
+.fanciness span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.fanciness span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.fanciness:hover span {
+  padding-right: 5px;
+}
+.fanciness:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 /* Paragraph & Typographic */
 p {
